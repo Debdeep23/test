@@ -75,6 +75,19 @@ def static_counts(row):
     matN = I(row.get("matN", ""))
     iters= I(row.get("iters", ""))
 
+    # Fallback: if N is not set, compute from rows/cols
+    if N == 0 and rows > 0:
+        N = rows if cols <= 1 else rows * cols
+
+    # Fallback: if H/W not set for conv2d, use rows/cols
+    if H == 0 and W == 0 and rows > 0 and cols > 0:
+        H = rows
+        W = cols
+
+    # Fallback: if matN not set for matmul, use rows (assuming square)
+    if matN == 0 and rows > 0:
+        matN = rows
+
     bx = I(row.get("block_x","1")); by = I(row.get("block_y","1")); bz = I(row.get("block_z","1"))
     gx = I(row.get("grid_x","1"));  gy = I(row.get("grid_y","1"));  gz = I(row.get("grid_z","1"))
     total_threads = bx*by*bz * gx*gy*gz
