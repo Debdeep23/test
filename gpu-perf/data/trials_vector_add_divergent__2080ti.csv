@@ -1,0 +1,11 @@
+kernel,args,regs,shmem,device_name,block_x,block_y,block_z,grid_x,grid_y,grid_z,warmup,reps,time_ms,rows,cols,iters,block,grid_blocks
+vector_add_divergent,--rows 1048576 --cols 1 --block 256 --warmup 20 --reps 100,15,0,NVIDIA GeForce RTX 2080 Ti,256,1,1,4096,1,1,20,100,0.094579,1048576,1,0,256,4096
+vector_add_divergent,--rows 1048576 --cols 1 --block 256 --warmup 20 --reps 100,15,0,NVIDIA GeForce RTX 2080 Ti,256,1,1,4096,1,1,20,100,0.094593,1048576,1,0,256,4096
+vector_add_divergent,--rows 1048576 --cols 1 --block 256 --warmup 20 --reps 100,15,0,NVIDIA GeForce RTX 2080 Ti,256,1,1,4096,1,1,20,100,0.099038,1048576,1,0,256,4096
+vector_add_divergent,--rows 1048576 --cols 1 --block 256 --warmup 20 --reps 100,15,0,NVIDIA GeForce RTX 2080 Ti,256,1,1,4096,1,1,20,100,0.098845,1048576,1,0,256,4096
+vector_add_divergent,--rows 1048576 --cols 1 --block 256 --warmup 20 --reps 100,15,0,NVIDIA GeForce RTX 2080 Ti,256,1,1,4096,1,1,20,100,0.094587,1048576,1,0,256,4096
+vector_add_divergent,--rows 1048576 --cols 1 --block 256 --warmup 20 --reps 100,15,0,NVIDIA GeForce RTX 2080 Ti,256,1,1,4096,1,1,20,100,0.098880,1048576,1,0,256,4096
+vector_add_divergent,--rows 1048576 --cols 1 --block 256 --warmup 20 --reps 100,15,0,NVIDIA GeForce RTX 2080 Ti,256,1,1,4096,1,1,20,100,0.094559,1048576,1,0,256,4096
+vector_add_divergent,--rows 1048576 --cols 1 --block 256 --warmup 20 --reps 100,15,0,NVIDIA GeForce RTX 2080 Ti,256,1,1,4096,1,1,20,100,0.099082,1048576,1,0,256,4096
+vector_add_divergent,--rows 1048576 --cols 1 --block 256 --warmup 20 --reps 100,15,0,NVIDIA GeForce RTX 2080 Ti,256,1,1,4096,1,1,20,100,0.098980,1048576,1,0,256,4096
+vector_add_divergent,--rows 1048576 --cols 1 --block 256 --warmup 20 --reps 100,15,0,NVIDIA GeForce RTX 2080 Ti,256,1,1,4096,1,1,20,100,0.094564,1048576,1,0,256,4096
