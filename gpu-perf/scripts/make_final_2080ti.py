@@ -221,7 +221,7 @@ def aggregate_trials():
     def key(r):
         keys = ["kernel","args","regs","shmem","device_name",
                 "block_x","block_y","block_z","grid_x","grid_y","grid_z",
-                "warmup","reps","N","rows","cols","matN","H","W","iters","block","grid_blocks"]
+                "warmup","reps","rows","cols","iters","block","grid_blocks"]
         return tuple(r.get(k,"") for k in keys)
 
     groups = {}
@@ -235,7 +235,7 @@ def aggregate_trials():
         row = {}
         keys = ["kernel","args","regs","shmem","device_name",
                 "block_x","block_y","block_z","grid_x","grid_y","grid_z",
-                "warmup","reps","N","rows","cols","matN","H","W","iters","block","grid_blocks"]
+                "warmup","reps","rows","cols","iters","block","grid_blocks"]
         for i,kk in enumerate(keys):
             row[kk] = k[i]
         row["trials"] = len(times)
@@ -270,8 +270,8 @@ def main():
         "kernel","args","device_name","regs","shmem",
         "block_x","block_y","block_z","grid_x","grid_y","grid_z",
         "warmup","reps","trials","mean_ms","std_ms",
-        # size family (only one set will be non-empty per kernel)
-        "N","rows","cols","matN","H","W","iters","block","grid_blocks",
+        # size family (removed unused N, matN, H, W columns - they're always empty)
+        "rows","cols","iters","block","grid_blocks",
         # static counts
         "FLOPs","BYTES","arithmetic_intensity","working_set_bytes","shared_bytes","mem_pattern",
         # GPU metrics

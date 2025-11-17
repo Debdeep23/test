@@ -1,11 +1,11 @@
 kernel,args,regs,shmem,device_name,block_x,block_y,block_z,grid_x,grid_y,grid_z,warmup,reps,time_ms,rows,cols,iters,block,grid_blocks
-naive_transpose,--rows 2048 --cols 2048 --warmup 20 --reps 100,8,0,NVIDIA GeForce RTX 2080 Ti,16,16,1,128,128,1,20,100,0.087962,2048,2048,0,(16,16384
-naive_transpose,--rows 2048 --cols 2048 --warmup 20 --reps 100,8,0,NVIDIA GeForce RTX 2080 Ti,16,16,1,128,128,1,20,100,0.084323,2048,2048,0,(16,16384
-naive_transpose,--rows 2048 --cols 2048 --warmup 20 --reps 100,8,0,NVIDIA GeForce RTX 2080 Ti,16,16,1,128,128,1,20,100,0.084362,2048,2048,0,(16,16384
-naive_transpose,--rows 2048 --cols 2048 --warmup 20 --reps 100,8,0,NVIDIA GeForce RTX 2080 Ti,16,16,1,128,128,1,20,100,0.084337,2048,2048,0,(16,16384
-naive_transpose,--rows 2048 --cols 2048 --warmup 20 --reps 100,8,0,NVIDIA GeForce RTX 2080 Ti,16,16,1,128,128,1,20,100,0.084316,2048,2048,0,(16,16384
-naive_transpose,--rows 2048 --cols 2048 --warmup 20 --reps 100,8,0,NVIDIA GeForce RTX 2080 Ti,16,16,1,128,128,1,20,100,0.084326,2048,2048,0,(16,16384
-naive_transpose,--rows 2048 --cols 2048 --warmup 20 --reps 100,8,0,NVIDIA GeForce RTX 2080 Ti,16,16,1,128,128,1,20,100,0.084295,2048,2048,0,(16,16384
-naive_transpose,--rows 2048 --cols 2048 --warmup 20 --reps 100,8,0,NVIDIA GeForce RTX 2080 Ti,16,16,1,128,128,1,20,100,0.084306,2048,2048,0,(16,16384
-naive_transpose,--rows 2048 --cols 2048 --warmup 20 --reps 100,8,0,NVIDIA GeForce RTX 2080 Ti,16,16,1,128,128,1,20,100,0.084353,2048,2048,0,(16,16384
-naive_transpose,--rows 2048 --cols 2048 --warmup 20 --reps 100,8,0,NVIDIA GeForce RTX 2080 Ti,16,16,1,128,128,1,20,100,0.084296,2048,2048,0,(16,16384
+naive_transpose,--rows 2048 --cols 2048 --warmup 20 --reps 100,8,0,NVIDIA GeForce RTX 2080 Ti,16,16,1,128,128,1,20,100,0.087962,2048,2048,0,256,16384
+naive_transpose,--rows 2048 --cols 2048 --warmup 20 --reps 100,8,0,NVIDIA GeForce RTX 2080 Ti,16,16,1,128,128,1,20,100,0.084323,2048,2048,0,256,16384
+naive_transpose,--rows 2048 --cols 2048 --warmup 20 --reps 100,8,0,NVIDIA GeForce RTX 2080 Ti,16,16,1,128,128,1,20,100,0.084362,2048,2048,0,256,16384
+naive_transpose,--rows 2048 --cols 2048 --warmup 20 --reps 100,8,0,NVIDIA GeForce RTX 2080 Ti,16,16,1,128,128,1,20,100,0.084337,2048,2048,0,256,16384
+naive_transpose,--rows 2048 --cols 2048 --warmup 20 --reps 100,8,0,NVIDIA GeForce RTX 2080 Ti,16,16,1,128,128,1,20,100,0.084316,2048,2048,0,256,16384
+naive_transpose,--rows 2048 --cols 2048 --warmup 20 --reps 100,8,0,NVIDIA GeForce RTX 2080 Ti,16,16,1,128,128,1,20,100,0.084326,2048,2048,0,256,16384
+naive_transpose,--rows 2048 --cols 2048 --warmup 20 --reps 100,8,0,NVIDIA GeForce RTX 2080 Ti,16,16,1,128,128,1,20,100,0.084295,2048,2048,0,256,16384
+naive_transpose,--rows 2048 --cols 2048 --warmup 20 --reps 100,8,0,NVIDIA GeForce RTX 2080 Ti,16,16,1,128,128,1,20,100,0.084306,2048,2048,0,256,16384
+naive_transpose,--rows 2048 --cols 2048 --warmup 20 --reps 100,8,0,NVIDIA GeForce RTX 2080 Ti,16,16,1,128,128,1,20,100,0.084353,2048,2048,0,256,16384
+naive_transpose,--rows 2048 --cols 2048 --warmup 20 --reps 100,8,0,NVIDIA GeForce RTX 2080 Ti,16,16,1,128,128,1,20,100,0.084296,2048,2048,0,256,16384
